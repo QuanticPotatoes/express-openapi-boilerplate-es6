@@ -1,0 +1,26 @@
+{
+  "presets": [
+    ["env", {
+      "targets": {
+        "node": "10.8"
+      },
+      "useBuiltIns": true
+    }]
+  ],
+  "env": {
+    "test": {
+      "plugins": ["istanbul"]
+    },
+    "gitlab": {
+      "plugins": ["istanbul"]
+    }
+  },
+  "plugins": [
+    "transform-object-rest-spread"
+  ],
+  "ignore": [
+    "./src/dist",
+    "./src/.dist"
+  ],
+  "retainLines": true
+}
